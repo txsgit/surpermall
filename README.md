@@ -17,3 +17,7 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### git romote project 
+1、git remote add origin https://github.com/txsgit/surpermall.git
+2、git push -u origin master -f
