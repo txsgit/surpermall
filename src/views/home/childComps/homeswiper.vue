@@ -3,7 +3,7 @@
  <Swiper>
          <SwiperItem v-for="(item,index) in banners" :key="index">
            <a :href="item.link">
-             <img :src="item.image"/>
+             <img :src="item.image" @load="imgload"/>
            </a>
          </SwiperItem>
        </Swiper>
@@ -25,13 +25,24 @@ export default {
   },
   data(){
    return {
-    
+      isimgload:false
    }
   },
    components:{
     Swiper,
     SwiperItem
   },
+  methods:{
+    imgload:function(){
+      if(!this.isimgload)
+      {
+        this.$emit("homeswrapperimgload")
+        this.isimgload=true
+      }
+      // console.log("img...");
+      
+    }
+  }
 }
 </script>
 

@@ -47,7 +47,7 @@ export function request(config)
   instance1.interceptors.response.use(function(resl){
 
     //响应成功返回信息
-    console.log(resl);
+    // console.log(resl);
     //可以返回data数据给请求
     
     return resl.data;
@@ -56,6 +56,9 @@ export function request(config)
     //  console.log(erre);
      
   })
+
+//   console.log(config);
+  
 
    instance1(config)
    .then(function(res){
