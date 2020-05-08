@@ -9,6 +9,7 @@ var Home=()=> import ('views/home/home')
 var Category=()=> import ('views/category/category')
 var Cart=()=> import ('views/cart/cart')
 var Profile=()=> import ('views/profile/profile')
+var detail=()=> import ('views/detail/detail')
 
 //定义路由规则,并在实例中使用
 var routes=[
@@ -31,6 +32,10 @@ var routes=[
       {
         path:'/profile',
         component:Profile
+      },
+      {
+        path:'/detail/:iid', //动态传参
+        component:detail
       }
 ]
 

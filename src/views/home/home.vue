@@ -146,6 +146,10 @@ export default {
      
     this.savey=this.$refs.scroll.scroll.y
   },
+  destroyed:function(){
+   //组件销毁，取消监听
+   this.$bus.$off('imgload');
+  },
   methods:{
    
     /***

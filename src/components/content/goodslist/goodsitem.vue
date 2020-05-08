@@ -1,9 +1,9 @@
 <template>
-   <div class="goods-item">
+   <div class="goods-item" @click="detail(goods.id)">
      <!--@load监听图片加载完成-->
      <img :src="goods.image" @load="imgload"/>
      <div class="goods-info">
-         <p>{{goods.name}}</p>
+         <p>{{goods.title}}</p>
          <span class="price">{{goods.price}}</span>
          <span class="collect">{{goods.collect}}</span>
      </div>
@@ -33,6 +33,13 @@ export default {
       // console.log("image ...");
       //图片加载成功一次就发送一次
       this.$bus.$emit("imgload")
+      
+    },
+    detail:function(iid){
+      //点击跳转详情
+      console.log(iid);
+      
+      this.$router.push("/detail/"+iid)
       
     }
   }
