@@ -144,7 +144,7 @@ export default {
         //在这显示添加购物车成功
       
         
-        
+        //调用封装组件
         this.$toast.show(res,2000)
         
         
