@@ -23,6 +23,8 @@ export function request(config)
         //可以创建多个实例
    var instance1=Axios.create({
        baseURL:'/api'
+      // baseURL:'http://localhost:8081'
+     
    })
 
    //axios请求拦截
