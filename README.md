@@ -26,3 +26,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 ### springbootapi是vue项目接口地址的服务器
 
+### nginx.cong 用来配置springbbotapi和vue客户端之间连接，解决跨域请求
+···
